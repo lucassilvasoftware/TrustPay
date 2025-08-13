@@ -1,48 +1,35 @@
 # TrustPay
 
-## Descrição
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/) 
+[![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white)](https://vuejs.org/) 
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-O **TrustPay** é um gateway de pagamento voltado para a área financeira, desenvolvido com foco em escalabilidade, segurança e facilidade de manutenção. O sistema possibilita o processamento de pagamentos online, gestão de transações, reembolsos e monitoramento antifraude, além de oferecer integração com adquirentes e instituições financeiras.
+---
 
-> **Trabalho acadêmico** para a disciplina **Tópicos Avançados em Engenharia de Software (CC7532)** do curso de **Ciência da Computação** da **FEI – São Bernardo do Campo**.
-
-## Tecnologias Utilizadas
-
-- **Front End:** Vue.js
-- **Back End:** Node.js
-- **Banco de Dados:** PostgreSQL
-- **Bibliotecas:**
-  - Decimal.js (precisão em cálculos financeiros)
-  - JWT (autenticação e autorização)
-- **Ferramentas Auxiliares:**
-  - GitHub (controle de versão e colaboração)
-  - Trello (gestão de tarefas via Kanban)
-  - Inteligência Artificial para suporte técnico no desenvolvimento
-
-## Estrutura do Projeto
-
-- `frontend/` – Código do front-end desenvolvido em Vue.js
-- `backend/` – Código do back-end em Node.js
-- `database/` – Scripts e arquivos relacionados ao PostgreSQL
-- `docs/` – Documentação complementar e especificações técnicas
-
-## Casos de Uso e Documentação Detalhada
-
-Todos os **casos de uso, fluxos e diagramas** estão documentados na **Wiki do projeto**, incluindo:
+O **TrustPay** é um gateway de pagamento para o mercado financeiro, desenvolvido com foco em **escalabilidade, segurança e facilidade de manutenção**. O sistema oferece:
 
 - Processamento de pagamentos online
 - Consultas e relatórios de transações
 - Reembolsos
 - Cadastro de comerciantes
-- Integração com adquirentes
+- Integração com adquirentes e processadoras
 - Monitoramento antifraude
 
-Acesse a Wiki para consultar detalhes técnicos completos: [Wiki do TrustPay](link-para-a-wiki)
+> **Trabalho acadêmico** da disciplina **Tópicos Avançados em Engenharia de Software (CC7532)**  
+> Curso: **Ciência da Computação – FEI São Bernardo do Campo**
 
-## Contribuição
+---
 
-Contribuições são bem-vindas! Por favor, abra um **pull request** ou issue para propor melhorias ou reportar problemas.
+## Tecnologias
 
-## Licença
+- **Front End:** Vue.js  
+- **Back End:** Node.js  
+- **Banco de Dados:** PostgreSQL  
+- **Bibliotecas:** Decimal.js, JWT  
+- **Ferramentas Auxiliares:** GitHub, Trello, Inteligência Artificial de suporte técnico  
 
-Este projeto está licenciado sob a **MIT License**.
+---
+
+## 📂 Estrutura do Projeto
+
