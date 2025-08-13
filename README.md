@@ -21,6 +21,12 @@ O **TrustPay** é um gateway de pagamento para o mercado financeiro, desenvolvid
 
 ---
 
+## 📚 Wiki do Projeto
+
+Toda a estrutura do projeto, incluindo os casos de uso, diagramas e documentação nas normas do curso de Engenharia de Software, pode ser encontrada na [Wiki do TrustPay](https://github.com/lucassilvahub/TrustPay/wiki).
+
+---
+
 ## Tecnologias
 
 - **Front End:** Vue.js  
@@ -28,8 +34,3 @@ O **TrustPay** é um gateway de pagamento para o mercado financeiro, desenvolvid
 - **Banco de Dados:** PostgreSQL  
 - **Bibliotecas:** Decimal.js, JWT  
 - **Ferramentas Auxiliares:** GitHub, Trello, Inteligência Artificial de suporte técnico  
-
----
-
-## 📂 Estrutura do Projeto
-
