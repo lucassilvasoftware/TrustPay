@@ -21,7 +21,7 @@ O **TrustPay** é um gateway de pagamento para o mercado financeiro, desenvolvid
 
 ---
 
-## 📚 Wiki do Projeto
+## Wiki do Projeto
 
 Toda a estrutura do projeto, incluindo os casos de uso, diagramas e documentação nas normas do curso de Engenharia de Software, pode ser encontrada na [Wiki do TrustPay](https://github.com/lucassilvahub/TrustPay/wiki).
 
