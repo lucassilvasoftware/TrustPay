@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="TrustPay Acessível - O primeiro gateway de pagamento brasileiro desenvolvido especificamente para deficientes visuais">
+  <meta name="keywords" content="gateway pagamento, acessibilidade, deficientes visuais, fintech, inclusão digital">
+  <title>TrustPay Acessível - Gateway de Pagamento Inclusivo</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #4f46e5;
+      --primary-dark: #3730a3;
+      --secondary-color: #06b6d4;
+      --accent-color: #10b981;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --background: #ffffff;
+      --surface: #f9fafb;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--background);
+    }
+
+    /* Header */
+    .header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .header.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .logo i {
+      margin-right: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-color);
+    }
+
+    .nav-link:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover:after {
+      width: 100%;
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 8rem 2rem 6rem;
+      margin-top: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(45deg, #ffffff, #e0e7ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 3rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--primary-color);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-secondary {
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Stats Section */
+    .stats-section {
+      background: var(--surface);
+      padding: 4rem 2rem;
+    }
+
+    .stats-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .stat-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    /* Features Section */
+    .features-section {
+      padding: 6rem 2rem;
+    }
+
+    .features-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: var(--text-light);
+      margin-bottom: 4rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 3rem;
+      margin-top: 4rem;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      border: 1px solid var(--border);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .feature-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+    }
+
+    .feature-description {
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* Tech Stack Section */
+    .tech-section {
+      background: var(--text-dark);
+      color: white;
+      padding: 6rem 2rem;
+    }
+
+    .tech-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .tech-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .tech-card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-5px);
+    }
+
+    .tech-card h3 {
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tech-list {
+      list-style: none;
+    }
+
+    .tech-list li {
+      margin-bottom: 0.5rem;
+      opacity: 0.8;
+    }
+
+    .tech-list li:before {
+      content: "▶";
+      color: var(--accent-color);
+      margin-right: 0.5rem;
+    }
+
+    /* Timeline Section */
+    .timeline-section {
+      padding: 6rem 2rem;
+      background: var(--surface);
+    }
+
+    .timeline {
+      max-width: 800px;
+      margin: 4rem auto 0;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .timeline-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      width: calc(50% - 2rem);
+      position: relative;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+      margin-left: auto;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+      margin-right: auto;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: 50%;
+      top: 2rem;
+      width: 20px;
+      height: 20px;
+      background: var(--primary-color);
+      border: 4px solid white;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 0 4px var(--primary-color);
+    }
+
+    .timeline-month {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-title {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .cta-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .cta-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+      opacity: 0.9;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--text-dark);
+      color: white;
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-section h3 {
+      color: var(--secondary-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Mobile Menu */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--text-dark);
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .features-grid,
+      .tech-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline::before {
+        left: 2rem;
+      }
+
+      .timeline-content {
+        width: calc(100% - 6rem);
+        margin-left: 4rem !important;
+      }
+
+      .timeline-marker {
+        left: 2rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    /* Accessibility Enhancements */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Focus states */
+    .nav-link:focus,
+    .cta-button:focus,
+    .btn-primary:focus,
+    .btn-secondary:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav-container">
+      <div class="logo">
+        <i class="fas fa-universal-access"></i>
+        TrustPay
+      </div>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio" class="nav-link">Início</a></li>
+        <li><a href="#problema" class="nav-link">Problema</a></li>
+        <li><a href="#solucao" class="nav-link">Solução</a></li>
+        <li><a href="#tecnologia" class="nav-link">Tecnologia</a></li>
+        <li><a href="#cronograma" class="nav-link">Cronograma</a></li>
+      </ul>
+
+      <a href="#contato" class="cta-button">Contato</a>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-container">
+      <h1>Gateway de Pagamento Inclusivo</h1>
+      <p>
+        O primeiro sistema de pagamentos brasileiro desenvolvido especificamente
+        para deficientes visuais. Tornando o e-commerce verdadeiramente acessível.
+      </p>
+      <div class="hero-buttons">
+        <a href="#solucao" class="btn-primary">
+          <i class="fas fa-play-circle"></i>
+          Conheça nosso produto
+        </a>
+        <a href="#problema" class="btn-secondary">
+          Saiba Mais
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section" id="problema">
+    <div class="stats-container">
+      <h2 class="section-title">O Problema que Resolvemos</h2>
+      <p class="section-subtitle">
+        Milhões de brasileiros enfrentam barreiras digitais nas transações online.
+        É hora de mudança.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">17M+</div>
+          <div class="stat-label">Brasileiros com deficiência visual</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">85%</div>
+          <div class="stat-label">Abandonam compras por barreiras</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1%</div>
+          <div class="stat-label">Sites brasileiros acessíveis</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">R$ 50Bi</div>
+          <div class="stat-label">Mercado inexplorado anualmente</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="solucao">
+    <div class="features-container">
+      <h2 class="section-title">Nossa Solução Inovadora</h2>
+      <p class="section-subtitle">
+        Tecnologia assistiva integrada para uma experiência de pagamento
+        verdadeiramente inclusiva e segura.
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-keyboard"></i>
+          </div>
+          <h3 class="feature-title">Navegação Total por Teclado</h3>
+          <p class="feature-description">
+            100% das funcionalidades acessíveis via teclado com atalhos personalizados
+            e ordem lógica de foco para máxima eficiência.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <h3 class="feature-title">Feedback Sonoro Inteligente</h3>
+          <p class="feature-description">
+            Sistema de áudio diferenciado com bips específicos, narração contextual
+            e confirmações verbais para cada etapa do processo.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="feature-title">Segurança Acessível</h3>
+          <p class="feature-description">
+            Autenticação biométrica por voz, confirmações auditivas de segurança
+            e prevenção específica contra fraudes.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="feature-title">Mobile First</h3>
+          <p class="feature-description">
+            Integração nativa com TalkBack e VoiceOver, gestos personalizados
+            e suporte completo a displays Braille.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="tech-section" id="tecnologia">
+    <div class="tech-container">
+      <h2 class="section-title">Tecnologias de Ponta</h2>
+      <p class="section-subtitle">
+        Stack moderno escolhido pela robustez, performance e excelente suporte
+        à acessibilidade web.
+      </p>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <h3><i class="fab fa-vuejs"></i> Frontend</h3>
+          <ul class="tech-list">
+            <li>Vue.js 3 + Composition API</li>
+            <li>ARIA avançado para acessibilidade</li>
+            <li>Web Speech API nativa</li>
+            <li>CSS Grid + Flexbox responsivo</li>
+            <li>PWA para experiência mobile</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <h3><i class="fab fa-node-js"></i> Backend</h3>
+          <ul class="tech-list">
+            <li>Node.js + Express.js</li>
+            <li>JWT para autenticação segura</li>
+            <li>Decimal.js para precisão financeira</li>
+            <li>APIs RESTful descritivas</li>
+            <li>Rate limiting e validação</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+          <ul class="tech-list">
+            <li>PostgreSQL para transações</li>
+            <li>Logs de acessibilidade estruturados</li>
+            <li>Backup automático criptografado</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <h3><i class="fas fa-tools"></i> DevOps & Qualidade</h3>
+          <ul class="tech-list">
+            <li>Docker para containerização</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section" id="cronograma">
+    <div class="timeline-section">
+      <h2 class="section-title">Cronograma de Desenvolvimento</h2>
+      <p class="section-subtitle">MVP acadêmico desenvolvido em 5 meses com metodologia ágil</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-month">Mês 1 - Planejamento</div>
+            <h3 class="timeline-title">Pesquisa & Prototipação</h3>
+            <p>Pesquisa com usuários deficientes visuais, definição de requisitos funcionais e não funcionais,
+              prototipação de interfaces acessíveis.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-month">Mês 2-3 - Desenvolvimento</div>
+            <h3 class="timeline-title">Core do Sistema</h3>
+            <p>Desenvolvimento do frontend acessível, APIs backend, integração com processadores de pagamento e sistema
+              de áudio inteligente.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-month">Mês 4 - Validação</div>
+            <h3 class="timeline-title">Testes & Refinamento</h3>
+            <p>Testes automatizados de acessibilidade, validação com 15 usuários reais, correções baseadas no feedback e
+              otimizações.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-month">Mês 5 - Entrega</div>
+            <h3 class="timeline-title">Finalização & Documentação</h3>
+            <p>Deploy em produção, documentação técnica completa, apresentação dos resultados e análise de métricas de
+              sucesso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="contato">
+    <div class="cta-container">
+      <h2>Transforme seu E-commerce</h2>
+      <p>
+        Seja pioneiro na inclusão digital financeira. Integre o TrustPay
+        e alcance milhões de novos clientes.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://github.com/lucassilvahub/TrustPay" class="btn-primary" target="_blank">
+          <i class="fab fa-github"></i>
+          Ver no GitHub
+        </a>
+        <a href="mailto:contato@trustpay.dev" class="btn-secondary">
+          <i class="fas fa-envelope"></i>
+          Entre em Contato
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3><i class="fas fa-universal-access"></i> TrustPay</h3>
+          <p>Democratizando o acesso ao e-commerce através de tecnologia assistiva avançada.</p>
+
+          <br>
+
+          <p><strong>Projeto Acadêmico</strong><br>
+            Ciência da Computação - FEI<br>
+            CC7532 - Tópicos Avançados em Engenharia de Software</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Produto</h3>
+          <ul class="footer-links">
+            <li><a href="#solucao">Funcionalidades</a></li>
+            <li><a href="#tecnologia">Tecnologia</a></li>
+            <li><a href="#cronograma">Cronograma</a></li>
+            <li><a href="https://github.com/lucassilvahub/TrustPay/wiki">Documentação</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:contato@trustpay.dev">contato@trustpay.dev</a></li>
+            <li><a href="https://github.com/lucassilvahub/TrustPay" target="_blank">GitHub Repository</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 TrustPay Acessível. Projeto acadêmico desenvolvido para fins educacionais.
+          <br>Licenciado sob <a href="https://opensource.org/licenses/MIT" target="_blank"
+            style="color: var(--secondary-color);">MIT License</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offsetTop = target.offsetTop - 80;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+
+        // Close mobile menu after clicking
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for animations
+    document.querySelectorAll('.feature-card, .tech-card, .stat-card, .timeline-item').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Counter animation for stats
+    const animateCounters = () => {
+      const counters = document.querySelectorAll('.stat-number');
+
+      counters.forEach(counter => {
+        const target = counter.textContent.match(/\d+/)[0];
+        const suffix = counter.textContent.replace(/\d+/, '');
+        let current = 0;
+        const increment = Math.ceil(target / 100);
+
+        const updateCounter = () => {
+          current += increment;
+          if (current < target) {
+            counter.textContent = current + suffix;
+            setTimeout(updateCounter, 30);
+          } else {
+            counter.textContent = target + suffix;
+          }
+        };
+
+        updateCounter();
+      });
+    };
+
+    // Trigger counter animation when stats section is visible
+    const statsSection = document.querySelector('.stats-section');
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    statsObserver.observe(statsSection);
+
+    // Keyboard navigation accessibility
+    document.addEventListener('keydown', (e) => {
+      // Skip to main content with Alt + S
+      if (e.altKey && e.key === 's') {
+        e.preventDefault();
+        document.querySelector('#inicio').focus();
+      }
+    });
+
+    // Add skip to content link for screen readers
+    const skipLink = document.createElement('a');
+    skipLink.href = '#inicio';
+    skipLink.className = 'sr-only';
+    skipLink.textContent = 'Pular para o conteúdo principal';
+    skipLink.style.position = 'absolute';
+    skipLink.style.top = '-40px';
+    skipLink.style.left = '6px';
+    skipLink.style.background = 'var(--primary-color)';
+    skipLink.style.color = 'white';
+    skipLink.style.padding = '8px 16px';
+    skipLink.style.textDecoration = 'none';
+    skipLink.style.borderRadius = '4px';
+    skipLink.style.zIndex = '10000';
+
+    skipLink.addEventListener('focus', () => {
+      skipLink.style.top = '6px';
+    });
+
+    skipLink.addEventListener('blur', () => {
+      skipLink.style.top = '-40px';
+    });
+
+    document.body.insertBefore(skipLink, document.body.firstChild);
+
+    // Add ARIA live region for dynamic content announcements
+    const liveRegion = document.createElement('div');
+    liveRegion.setAttribute('aria-live', 'polite');
+    liveRegion.setAttribute('aria-atomic', 'true');
+    liveRegion.className = 'sr-only';
+    liveRegion.id = 'live-region';
+    document.body.appendChild(liveRegion);
+
+    // Function to announce content to screen readers
+    function announceToScreenReader(message) {
+      const liveRegion = document.getElementById('live-region');
+      liveRegion.textContent = message;
+      setTimeout(() => {
+        liveRegion.textContent = '';
+      }, 1000);
+    }
+
+    // Announce section changes for screen reader users
+    const sections = document.querySelectorAll('section[id]');
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionName = entry.target.querySelector('h1, h2')?.textContent;
+          if (sectionName) {
+            announceToScreenReader(`Navegou para a seção: ${sectionName}`);
+          }
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => sectionObserver.observe(section));
+  </script>
+</body>
+
+</html>
