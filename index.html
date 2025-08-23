@@ -7,7 +7,7 @@
   <meta name="description"
     content="TrustPay - O primeiro gateway de pagamento brasileiro desenvolvido especificamente para deficientes visuais">
   <meta name="keywords" content="gateway pagamento, acessibilidade, deficientes visuais, fintech, inclusão digital">
-  <title>TrustPay - Gateway de Pagamento Inclusivo</title>
+  <title>TrustPay</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -780,7 +780,7 @@
   <!-- Hero Section -->
   <section class="hero" id="inicio">
     <div class="hero-container">
-      <h1>Gateway de Pagamento Inclusivo</h1>
+      <h1>O Gateway de Pagamento Inclusivo</h1>
       <p>
         O primeiro sistema de pagamentos brasileiro desenvolvido especificamente
         para deficientes visuais. Tornando o e-commerce verdadeiramente acessível.
@@ -808,24 +808,39 @@
 
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-number">17M+</div>
+          <div class="stat-number">6M+</div>
           <div class="stat-label">Brasileiros com deficiência visual</div>
-          <small class="stat-source">Fonte: IBGE - Censo Demográfico 2022</small>
+          <small class="stat-source">
+            Fonte: <a
+              href="https://proceedings.science/cied/trabalhos/saude-e-acessibilidade-a-realidade-dos-deficientes-visuais-no-brasil"
+              target="_blank" style="color: var(--primary-color);">ICIED</a>
+          </small>
         </div>
         <div class="stat-card">
           <div class="stat-number">85%</div>
           <div class="stat-label">Abandonam compras por barreiras</div>
-          <small class="stat-source">Fonte: WebAIM - Accessibility Survey 2023</small>
+          <small class="stat-source">
+            Fonte: <a href="https://webaim.org/projects/screenreadersurvey10/" target="_blank"
+              style="color: var(--primary-color);">WebAIM - Screen Reader User Survey 2024</a>
+          </small>
         </div>
         <div class="stat-card">
-          <div class="stat-number">1%</div>
+          <div class="stat-number">3%</div>
           <div class="stat-label">Sites brasileiros acessíveis</div>
-          <small class="stat-source">Fonte: Movimento Web para Todos 2024</small>
+          <small class="stat-source">
+            Fonte: <a
+              href="https://mwpt.com.br/metodologia-utilizada-no-estudo-de-acessibilidade-em-sites-ativos-brasil-2024/"
+              target="_blank" style="color: var(--primary-color);">Movimento Web para Todos 2024</a>
+          </small>
         </div>
         <div class="stat-card">
-          <div class="stat-number">R$ 50Bi</div>
-          <div class="stat-label">Mercado inexplorado anualmente</div>
-          <small class="stat-source">Fonte: Return on Disability Group 2023</small>
+          <div class="stat-number">US$ 5Bi</div>
+          <div class="stat-label">Mercado específico para deficientes visuais (2025)</div>
+          <small class="stat-source">
+            Fonte: <a
+              href="https://www.datainsightsmarket.com/reports/assistive-technology-for-the-visually-impaired-1760455"
+              target="_blank" style="color: var(--primary-color);">Data Insights Market 2024</a>
+          </small>
         </div>
       </div>
     </div>
@@ -848,7 +863,7 @@
           <h3 class="feature-title">Navegação por Teclado</h3>
           <p class="feature-description">
             Interface 100% navegável por teclado com atalhos básicos
-            (Tab, Enter, Escape) e ordem lógica de foco.
+            (Tab, Enter, Escape).
           </p>
         </div>
 
@@ -916,9 +931,8 @@
             Frontend
           </h3>
           <ul class="tech-list">
-            <li>Vue.js 3 + Composition API</li>
-            <li>ARIA avançado para acessibilidade</li>
-            <li>Web Speech API nativa</li>
+            <li>Vue.js</li>
+            <li>Web Speech nativo</li>
           </ul>
         </div>
 
@@ -972,7 +986,7 @@
         <div class="timeline-item">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
-            <div class="timeline-month">Mês 1 - Planejamento</div>
+            <div class="timeline-month">Sprint 1 - Planejamento</div>
             <h3 class="timeline-title">Pesquisa & Prototipação</h3>
             <p>Pesquisa com usuários deficientes visuais, definição de requisitos funcionais e não funcionais,
               prototipação de interfaces acessíveis.</p>
@@ -982,7 +996,7 @@
         <div class="timeline-item">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
-            <div class="timeline-month">Mês 2-3 - Desenvolvimento</div>
+            <div class="timeline-month">Sprint 2 - Desenvolvimento</div>
             <h3 class="timeline-title">Core do Sistema</h3>
             <p>Desenvolvimento do frontend acessível, APIs backend, integração com processadores de pagamento e sistema
               de áudio inteligente.</p>
@@ -992,7 +1006,7 @@
         <div class="timeline-item">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
-            <div class="timeline-month">Mês 4 - Validação</div>
+            <div class="timeline-month">Sprint 3 - Validação</div>
             <h3 class="timeline-title">Testes & Refinamento</h3>
             <p>Testes automatizados de acessibilidade, validação, correções baseadas no feedback e
               otimizações.</p>
@@ -1002,7 +1016,7 @@
         <div class="timeline-item">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
-            <div class="timeline-month">Mês 5 - Entrega</div>
+            <div class="timeline-month">Sprint 4 - Entrega</div>
             <h3 class="timeline-title">Finalização & Documentação</h3>
             <p>Deploy em produção, documentação técnica completa, apresentação dos resultados e análise de métricas de
               sucesso.</p>
@@ -1201,22 +1215,30 @@
     });
 
     // Counter animation for stats
+    // Trocar esta parte no código:
     const animateCounters = () => {
       const counters = document.querySelectorAll('.stat-number');
 
       counters.forEach(counter => {
-        const target = counter.textContent.match(/\d+/)[0];
-        const suffix = counter.textContent.replace(/\d+/, '');
+        const fullText = counter.textContent;
+        const numbers = fullText.match(/\d+/);
+
+        if (!numbers) return; // Se não tem números, pula
+
+        const target = parseInt(numbers[0]);
+        const prefix = fullText.split(numbers[0])[0]; // Antes do número
+        const suffix = fullText.split(numbers[0])[1]; // Depois do número
+
         let current = 0;
         const increment = Math.ceil(target / 100);
 
         const updateCounter = () => {
           current += increment;
           if (current < target) {
-            counter.textContent = current + suffix;
+            counter.textContent = prefix + current + suffix;
             setTimeout(updateCounter, 30);
           } else {
-            counter.textContent = target + suffix;
+            counter.textContent = prefix + target + suffix;
           }
         };
 
