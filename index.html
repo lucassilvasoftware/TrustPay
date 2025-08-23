@@ -263,6 +263,15 @@
       font-weight: 500;
     }
 
+    .stat-source {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: var(--text-light);
+      opacity: 0.8;
+      font-style: italic;
+    }
+
     /* Features Section */
     .features-section {
       padding: 6rem 2rem;
@@ -461,6 +470,108 @@
       margin-bottom: 1rem;
     }
 
+    /* Team Section */
+    .team-section {
+      padding: 6rem 2rem;
+      background: var(--background);
+    }
+
+    .team-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+    }
+
+    .team-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid var(--border);
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-avatar {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      color: white;
+      font-size: 2rem;
+    }
+
+    .team-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+
+    .team-id {
+      color: var(--primary-color);
+      font-weight: 500;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .team-role {
+      color: var(--secondary-color);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .team-description {
+      color: var(--text-light);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .university-info {
+      background: var(--surface);
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      margin-top: 3rem;
+      border: 1px solid var(--border);
+    }
+
+    .university-info h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .university-info p {
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .university-info p:last-child {
+      margin-bottom: 0;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
     /* CTA Section */
     .cta-section {
       background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
@@ -580,7 +691,8 @@
       }
 
       .features-grid,
-      .tech-grid {
+      .tech-grid,
+      .team-grid {
         grid-template-columns: 1fr;
       }
 
@@ -654,6 +766,7 @@
         <li><a href="#solucao" class="nav-link">Solução</a></li>
         <li><a href="#tecnologia" class="nav-link">Tecnologia</a></li>
         <li><a href="#cronograma" class="nav-link">Cronograma</a></li>
+        <li><a href="#equipe" class="nav-link">Equipe</a></li>
       </ul>
 
       <a href="#contato" class="cta-button">Contato</a>
@@ -697,18 +810,22 @@
         <div class="stat-card">
           <div class="stat-number">17M+</div>
           <div class="stat-label">Brasileiros com deficiência visual</div>
+          <small class="stat-source">Fonte: IBGE - Censo Demográfico 2022</small>
         </div>
         <div class="stat-card">
           <div class="stat-number">85%</div>
           <div class="stat-label">Abandonam compras por barreiras</div>
+          <small class="stat-source">Fonte: WebAIM - Accessibility Survey 2023</small>
         </div>
         <div class="stat-card">
           <div class="stat-number">1%</div>
           <div class="stat-label">Sites brasileiros acessíveis</div>
+          <small class="stat-source">Fonte: Movimento Web para Todos 2024</small>
         </div>
         <div class="stat-card">
           <div class="stat-number">R$ 50Bi</div>
           <div class="stat-label">Mercado inexplorado anualmente</div>
+          <small class="stat-source">Fonte: Return on Disability Group 2023</small>
         </div>
       </div>
     </div>
@@ -793,7 +910,11 @@
 
       <div class="tech-grid">
         <div class="tech-card">
-          <h3><i class="fab fa-vuejs"></i> Frontend</h3>
+          <h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js"
+              style="width: 24px; height: 24px; margin-right: 0.5rem;">
+            Frontend
+          </h3>
           <ul class="tech-list">
             <li>Vue.js 3 + Composition API</li>
             <li>ARIA avançado para acessibilidade</li>
@@ -802,18 +923,25 @@
         </div>
 
         <div class="tech-card">
-          <h3><i class="fab fa-node-js"></i> Backend</h3>
+          <h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+              style="width: 24px; height: 24px; margin-right: 0.5rem;">
+            Backend
+          </h3>
           <ul class="tech-list">
             <li>Node.js + Express.js</li>
             <li>JWT para autenticação segura</li>
             <li>Decimal.js para precisão financeira</li>
-            <li>APIs RESTful descritivas</li>
             <li>Rate limiting e validação</li>
           </ul>
         </div>
 
         <div class="tech-card">
-          <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+          <h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL" style="width: 24px; height: 24px; margin-right: 0.5rem;">
+            Banco de Dados
+          </h3>
           <ul class="tech-list">
             <li>PostgreSQL para transações</li>
             <li>Logs de acessibilidade estruturados</li>
@@ -821,7 +949,11 @@
         </div>
 
         <div class="tech-card">
-          <h3><i class="fas fa-tools"></i> DevOps & Qualidade</h3>
+          <h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
+              style="width: 24px; height: 24px; margin-right: 0.5rem;">
+            DevOps & Qualidade
+          </h3>
           <ul class="tech-list">
             <li>Docker para containerização</li>
           </ul>
@@ -880,6 +1012,71 @@
     </div>
   </section>
 
+  <!-- Team Section -->
+  <section class="team-section" id="equipe">
+    <div class="team-container">
+      <h2 class="section-title">Nossa Equipe</h2>
+      <p class="section-subtitle">
+        Estudantes de Ciência da Computação da FEI unidos pela missão de tornar o e-commerce mais inclusivo
+      </p>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3 class="team-name">Deise Adriana Silva Araújo</h3>
+          <p class="team-id">RA: 22.222.024-6</p>
+          <p class="team-role">Product Owner</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3 class="team-name">Gustavo Dias Vicentin</h3>
+          <p class="team-id">RA: 22.123.061-8</p>
+          <p class="team-role">Desenvolvedor</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3 class="team-name">Vinicius Saidi Soares</h3>
+          <p class="team-id">RA: 22.122.064-3</p>
+          <p class="team-role">Desenvolvedor</p>
+
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3 class="team-name">Lucas Rebouças Silva</h3>
+          <p class="team-id">RA: 22.122.048-6</p>
+          <p class="team-role">Gerente do Produto</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3 class="team-name">Victor Caldeira Iak</h3>
+          <p class="team-id">RA: 22.122.057-7</p>
+          <p class="team-role">Scrum Master</p>
+        </div>
+      </div>
+
+      <div class="university-info">
+        <h3><i class="fas fa-university"></i> Centro Universitário FEI</h3>
+        <p>Ciência da Computação - São Bernardo do Campo</p>
+        <p>CC7532 - Tópicos Avançados em Engenharia de Software</p>
+        <p>2025.1</p>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Section -->
   <section class="cta-section" id="contato">
     <div class="cta-container">
@@ -922,6 +1119,7 @@
             <li><a href="#solucao">Funcionalidades</a></li>
             <li><a href="#tecnologia">Tecnologia</a></li>
             <li><a href="#cronograma">Cronograma</a></li>
+            <li><a href="#equipe">Equipe</a></li>
             <li><a href="https://github.com/lucassilvahub/TrustPay/wiki">Documentação</a></li>
           </ul>
         </div>
@@ -998,7 +1196,7 @@
     }, observerOptions);
 
     // Observe elements for animations
-    document.querySelectorAll('.feature-card, .tech-card, .stat-card, .timeline-item').forEach(el => {
+    document.querySelectorAll('.feature-card, .tech-card, .stat-card, .timeline-item, .team-card').forEach(el => {
       observer.observe(el);
     });
 
