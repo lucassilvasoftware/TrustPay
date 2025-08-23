@@ -11,11 +11,13 @@ O **TrustPay** é um gateway de pagamento para o mercado financeiro, desenvolvid
 - Consultas e relatórios de transações
 - Reembolsos
 - Cadastro de comerciantes
-- Integração com adquirentes e processadoras
-- Monitoramento antifraude
 
 > **Trabalho acadêmico** da disciplina **Tópicos Avançados em Engenharia de Software (CC7532)**  
 > Curso: **Ciência da Computação – FEI São Bernardo do Campo**
+
+## 🌐 Acesso ao Sistema
+
+**🔗 [Acessar TrustPay](https://lucassilvahub.github.io/TrustPay/)**
 
 ## Wiki do Projeto
 
@@ -27,4 +29,4 @@ Toda a estrutura do projeto, incluindo os casos de uso, diagramas e documentaç�
 - **Back End:** Node.js  
 - **Banco de Dados:** PostgreSQL  
 - **Bibliotecas:** Decimal.js, JWT  
-- **Ferramentas Auxiliares:** GitHub, Trello, Inteligência Artificial de suporte técnico  
+- **Ferramentas Auxiliares:** GitHub, Trello, Inteligência Artificial de suporte técnico
