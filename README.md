@@ -1,4 +1,4 @@
-# 🏦 TrustPay  
+# TrustPay  
 
 > **Trabalho acadêmico** – Disciplina **Tópicos Avançados em Engenharia de Software (CC7532)**  
 > Curso: **Ciência da Computação – FEI São Bernardo do Campo – 2025.1**
@@ -27,7 +27,7 @@ O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para p
 
 ---
 
-## 💡 Nossa Solução
+## Nossa Solução
 
 - Navegação **100% por teclado**  
 - **Formulários lineares** com validação em tempo real  
@@ -62,18 +62,6 @@ Toda a documentação detalhada (modelagem, requisitos, casos de uso e diagramas
 | **Victor Caldeira Iak** | 22.122.057-7 | Scrum Master |
 | **Gustavo Dias Vicentin** | 22.123.061-8 | Desenvolvedor |
 | **Vinicius Saidi Soares** | 22.122.064-3 | Desenvolvedor |
-
----
-
-## MVP Acadêmico
-
-Desenvolvido em **5 meses** com foco em:  
-
-- Navegação por teclado  
-- Formulários acessíveis  
-- Feedback sonoro  
-- Design responsivo  
-- Segurança padrão  
 
 ---
 
