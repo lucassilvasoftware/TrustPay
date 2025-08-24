@@ -51,11 +51,6 @@ O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para p
 Toda a documentação detalhada (modelagem, requisitos, casos de uso e diagramas) está disponível na  
 👉 [**Wiki do TrustPay**](https://github.com/lucassilvahub/TrustPay/wiki)  
 
-**Inclui:**  
-- Elevator Pitch  
-- Lean Canvas  
-- Casos de Uso  
-
 ---
 
 ## Equipe
