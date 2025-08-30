@@ -15,6 +15,8 @@
 O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para pessoas com deficiência visual**, projetado para oferecer **inclusão digital real**, além de **segurança, escalabilidade e manutenção simplificada**.  
 
 🔗 **[Acessar o TrustPay](https://lucassilvahub.github.io/TrustPay/)**  
+🔗 **[Acessar o Trello](https://trello.com/b/Fsm4sKCJ/grupo-j-engenharia-de-software)**  
+
 
 ---
 
