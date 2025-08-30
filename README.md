@@ -63,13 +63,8 @@ Toda a documentação detalhada (modelagem, requisitos, casos de uso e diagramas
 | **Gustavo Dias Vicentin** | 22.123.061-8 | Desenvolvedor |
 | **Vinicius Saidi Soares** | 22.122.064-3 | Desenvolvedor |
 
----
-
-## Licença
-
-Licenciado sob a [MIT License](LICENSE).  
 
 ---
 
-✨ **TrustPay** – Democratizando o acesso ao e-commerce através da tecnologia assistiva.  
+**TrustPay** – Democratizando o acesso ao e-commerce através da tecnologia assistiva.  
 ****
