@@ -1,5 +1,7 @@
 # TrustPay  
 
+<img width="1900" height="616" alt="Screenshot 2025-09-12 204118" src="https://github.com/user-attachments/assets/7de09282-9786-498f-b2a2-86ff4eee8987" />
+
 > **Trabalho acadêmico** – Disciplina **Tópicos Avançados em Engenharia de Software (CC7532)**  
 > Curso: **Ciência da Computação – FEI São Bernardo do Campo – 2025.1**
 
