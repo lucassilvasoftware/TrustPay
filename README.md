@@ -33,20 +33,15 @@ O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para p
 
 ## Nossa Solução
 
-- Navegação **100% por teclado**  
+- Comandos **100% por voz**  
 - **Formulários lineares** com validação em tempo real  
-- **Feedback sonoro** (Web Speech API)  
-- **Segurança padrão** (JWT, criptografia, validação de dados)  
-- **Design responsivo** compatível com leitores de tela  
+- **Feedback sonoro** (Web Speech)
 
 ---
 
 ## Tecnologias
 
-**Frontend:** Vue.js • Web Speech API • HTML Semântico  
-**Backend:** Node.js • Express.js • JWT • Decimal.js  
-**Banco de Dados:** PostgreSQL • Logs de acessibilidade  
-**DevOps:** Docker • GitHub Actions  
+**Stacks:** HTML + CSS + JS
 
 ---
 
