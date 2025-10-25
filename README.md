@@ -9,21 +9,26 @@
 
 ---
 
-## Sobre o Projeto
+## 💡 Sobre o Projeto
 
-O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para pessoas com deficiência visual**, projetado para oferecer **inclusão digital real**, além de **segurança, escalabilidade e manutenção simplificada**.  
+O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para pessoas com deficiência visual**, projetado para oferecer **inclusão digital real**, além de **segurança, escalabilidade e manutenção simplificada**.
 
-🔗 **[Acessar a Simulação do Projeto](https://lucassilvasoftware.github.io/TrustPaySim/)** 
-<br><br>
-🔗 [**Documentação Completa do Projeto**](https://github.com/lucassilvasoftware/TrustPay/wiki)
-<br><br>
-🔗 **[Site Institucional](https://lucassilvasoftware.github.io/TrustPay/)**  
-<br>
-🔗 **[Kanban de Histórias de Usuário](https://trello.com/b/Fsm4sKCJ/grupo-j-engenharia-de-software)**  
-<br>
-🔗 **[Kanban de Impedimentos](https://trello.com/b/paCmvwsT/kaban-de-impedimentos)** 
+---
 
-🔗 [Abrir preview Projeto Destkop](https://feiedu-my.sharepoint.com/:v:/g/personal/uniflsilva_fei_edu_br/EaITu1S9S3JNkak0DZC4ORkBC4BnZVx4SUBbzJ_JRe4_8g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=lVayOc)
+### 🔗 Acesse os Recursos do Projeto
+
+- 🧩 **[Simulação do Projeto](https://lucassilvasoftware.github.io/TrustPaySim/)**
+- 📚 **[Documentação Completa](https://github.com/lucassilvasoftware/TrustPay/wiki)**
+- 🌐 **[Site Institucional](https://lucassilvasoftware.github.io/TrustPay/)**
+- 🗂️ **[Kanban de Histórias de Usuário](https://trello.com/b/Fsm4sKCJ/grupo-j-engenharia-de-software)**
+- 🚧 **[Kanban de Impedimentos](https://trello.com/b/paCmvwsT/kaban-de-impedimentos)**
+
+---
+
+### 💻 Pré-visualizações do Sistema
+
+- 🖥️ **[Preview Desktop — TrustPay](https://feiedu-my.sharepoint.com/:v:/g/personal/uniflsilva_fei_edu_br/EaITu1S9S3JNkak0DZC4ORkBC4BnZVx4SUBbzJ_JRe4_8g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=lVayOc)**
+- 📱 **[Preview Mobile — TrustPay](https://feiedu-my.sharepoint.com/:v:/g/personal/uniflsilva_fei_edu_br/ESaRfs0pgUxKhBbdIMtP5DIBckTAwWCCUs_VzvuNkYJYfA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=uyfCMb)**
 
 
 ---
