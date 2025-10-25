@@ -5,9 +5,6 @@
 > **Trabalho acadêmico** – Disciplina **Tópicos Avançados em Engenharia de Software (CC7532)**  
 > Curso: **Ciência da Computação – FEI São Bernardo do Campo – 2025.1**
 
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/) 
-[![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white)](https://vuejs.org/) 
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
@@ -16,10 +13,10 @@
 
 O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para pessoas com deficiência visual**, projetado para oferecer **inclusão digital real**, além de **segurança, escalabilidade e manutenção simplificada**.  
 
+🔗 **[Acessar a Simulação do Projeto](https://lucassilvasoftware.github.io/TrustPaySim/)** 
 🔗 **[Acessar o Site Institucional](https://lucassilvasoftware.github.io/TrustPay/)**  
 🔗 **[Acessar o Kanban de Histórias de Usuário](https://trello.com/b/Fsm4sKCJ/grupo-j-engenharia-de-software)**  
 🔗 **[Acessar o Kanban de Impedimentos](https://trello.com/b/paCmvwsT/kaban-de-impedimentos)** 
-
 
 ---
 
