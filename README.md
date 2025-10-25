@@ -17,11 +17,11 @@ O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para p
 <br><br>
 🔗 [**Documentação Completa do Projeto**](https://github.com/lucassilvasoftware/TrustPay/wiki)
 <br><br>
-🔗 **[Acessar o Site Institucional](https://lucassilvasoftware.github.io/TrustPay/)**  
+🔗 **[Site Institucional](https://lucassilvasoftware.github.io/TrustPay/)**  
 <br>
-🔗 **[Acessar o Kanban de Histórias de Usuário](https://trello.com/b/Fsm4sKCJ/grupo-j-engenharia-de-software)**  
+🔗 **[Kanban de Histórias de Usuário](https://trello.com/b/Fsm4sKCJ/grupo-j-engenharia-de-software)**  
 <br>
-🔗 **[Acessar o Kanban de Impedimentos](https://trello.com/b/paCmvwsT/kaban-de-impedimentos)** 
+🔗 **[Kanban de Impedimentos](https://trello.com/b/paCmvwsT/kaban-de-impedimentos)** 
 
 
 ---
