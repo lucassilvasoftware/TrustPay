@@ -28,7 +28,7 @@ O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para p
 ### 💻 Pré-visualizações do Sistema
 
 - 🖥️ **[Preview Desktop — TrustPay](https://youtu.be/lNsggAF4MlA)**
-- 📱 **[Preview Mobile — TrustPay](https://feiedu-my.sharepoint.com/:v:/g/personal/uniflsilva_fei_edu_br/ESaRfs0pgUxKhBbdIMtP5DIBckTAwWCCUs_VzvuNkYJYfA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=uyfCMb)**
+- 📱 **[Preview Mobile — TrustPay](https://youtu.be/0UhLPe8rXW4)**
 
 
 ---
