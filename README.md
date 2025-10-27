@@ -27,8 +27,8 @@ O **TrustPay** é o **primeiro gateway de pagamento brasileiro acessível para p
 
 ### 💻 Pré-visualizações do Sistema
 
-- 🖥️ **[Preview Desktop — TrustPay](https://youtu.be/lNsggAF4MlA)**
-- 📱 **[Preview Mobile — TrustPay](https://youtu.be/0UhLPe8rXW4)**
+- 🖥️ **[Preview Desktop — TrustPay](https://drive.google.com/file/d/1-aTgQDMGuBQbqfv816AONVn3EkaHOC6E/view?usp=sharing)**
+- 📱 **[Preview Mobile — TrustPay](https://drive.google.com/file/d/1uzYgOodZPKgmzM_T_w38mER2ZentxEXn/view?usp=sharing)**
 
 
 ---
